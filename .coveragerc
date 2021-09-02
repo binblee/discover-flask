@@ -1,0 +1,19 @@
+# .coveragerc to control coverage.py
+[run]
+omit =
+        */__init__.py
+        */test*.py
+        db_create.py
+        db_create_users.py
+        sql.py
+
+[report]
+omit =
+        */__init__.py
+        */test*.py
+        db_create.py
+        db_create_users.py
+        sql.py
+
+exclude_lines =
+    if __name__ == .__main__.:
