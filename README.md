@@ -1,4 +1,7 @@
 # Notes
+[![Build Status](https://app.travis-ci.com/binblee/discover-flask.svg?branch=main)](https://app.travis-ci.com/binblee/discover-flask)
+
+Demo based on [Discover Flask Course](https://github.com/realpython/discover-flask), with Python 3.
 
 ### Environment setup
 
