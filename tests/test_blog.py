@@ -1,4 +1,3 @@
-import unittest
 from .base import BaseTestCase
 
 
@@ -17,10 +16,8 @@ class BlogPostTests(BaseTestCase):
                 data=dict(title="test", description="test"),
                 follow_redirects=True
             )
-            self.assertEqual(response.status_code, 200)
-            self.assertIn(b'New entry was successfully posted. Thanks.',
-                          response.data)
-
-
-if __name__ == '__main__':
-    unittest.main()
+            # self.assertEqual(response.status_code, 200)
+            # self.assertIn(b'New entry was successfully posted. Thanks.',
+            #               response.data)
+            assert response.status_code == 200
+            assert b'New entry was successfully posted. Thanks.' in response.data

@@ -1,8 +1,8 @@
-from flask_testing import TestCase
+import flask_testing
 from project import app, db
 from project.models import BlogPost, User
 
-class BaseTestCase(TestCase):
+class BaseTestCase(flask_testing.TestCase):
     def create_app(self):
         app.config.from_object('config.TestConfig')
         return app
