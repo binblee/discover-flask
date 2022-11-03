@@ -1,0 +1,6 @@
+__pycache__
+.devcontainer
+.pytest_cache
+htmlcov
+.coverage
+.travis.yml
